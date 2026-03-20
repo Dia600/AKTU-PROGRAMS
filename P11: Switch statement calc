@@ -1,0 +1,45 @@
+#include<stdio.h>
+
+int main()
+{
+    float num1, num2 ;
+    char oper ;
+    printf("Enter num1: ");
+    scanf("%f",&num1);
+    printf("Enter operator(+,*,/,-): ");
+    scanf(" %c",&oper);
+    printf("Enter num2:");
+    scanf("%f",&num2);
+
+    float mul = num1*num2;
+    float divis = num1/num2 ;
+    float subs= num1-num2;
+    float add= num1 + num2;
+
+    switch(oper)
+    {
+        case '+':
+        {
+            printf("Ans=%.2f",add);
+            break;
+        }
+        case '-':
+        {
+            printf("Ans=%.2f",subs);
+            break;
+        }
+        case '*':
+        {
+            printf("Ans=%.2f",mul);
+            break;
+        }
+        case '/':
+        {
+            printf("Ans=%.2f",divis);
+            break;
+        }
+    }
+
+
+    return 0;
+}
