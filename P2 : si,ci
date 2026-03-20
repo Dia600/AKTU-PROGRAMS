@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int PA,RI,time;
+
+    printf("Enter principal amount:");
+    scanf("%d",&PA);
+    printf("Enter time:");
+    scanf("%d",&time);
+    printf("Enter rate of interest:");
+    scanf("%d",&RI);
+    float prod = PA*RI*time;
+    float SI = prod/100;
+    float CI = PA*pow(1+(RI/100.0),time)-PA;
+
+    printf("Simple interest is %f\n",SI);
+    printf("Compound interest is %f ",CI);
+
+    return 0;
+
+}
