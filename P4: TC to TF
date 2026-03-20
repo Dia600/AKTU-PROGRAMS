@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<math.h>
+
+int main(){
+    float TC,TF;
+    printf("Enter temperature(in centigrade):");
+    scanf("%f",&TC);
+    TF = (1.8*TC)+32;
+    printf("Temperate(in farhenheit) is %.1f: ",TF);
+    
+    return 0;
+}
