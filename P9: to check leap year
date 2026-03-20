@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+int main()
+{
+    int year,century_year=0;
+
+    printf("Enter year:");
+    scanf("%d",&year);
+
+    if (year%100 == 0)
+    {
+        century_year = year;
+    }
+
+    if (year%4==0 && century_year%400==0)
+    {
+        printf("The year is a leap year.");
+    }
+    else 
+    {
+        printf("The year is not a leap year.");
+    }
+    
+    return 0;
+}
