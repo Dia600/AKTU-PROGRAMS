@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main(){
+    int sub1,sub2,sub3,sub4,sub5;
+    printf("Enter the marks of 5 subs:\n");
+    scanf("%d %d %d %d %d",&sub1,&sub2,&sub3,&sub4,&sub5);
+    int sum_of_marks = sub1+sub2+sub3+sub4+sub5;
+    float per = (sum_of_marks/500.0)*100;
+    printf("total marks you got:%d\n",sum_of_marks);
+    printf("Percentage:%.2f",per);
+    return 0;
+}
