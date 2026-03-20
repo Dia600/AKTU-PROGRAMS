@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<math.h>
+
+int main(){
+    int rad;
+    printf("Enter radius of circle:");
+    scanf("%d",&rad);
+    float area = 3.14*rad*rad;
+    float circum = 2*3.14*rad;
+    printf("Area of circle is %.2f\n",area);
+    printf("Circumference of circle is %.2f ",circum);
+    return 0;
+}
