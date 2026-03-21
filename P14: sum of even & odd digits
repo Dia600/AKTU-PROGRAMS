@@ -1,0 +1,30 @@
+#include<stdio.h>
+
+int main()
+{
+    int num, check, even_sum=0, odd_sum =0;
+    printf("Enter a number:");
+    scanf("%d",&num);
+    
+    while (num>0)
+    {
+        check = num%10;
+    
+        if (check%2 == 0)
+        {
+            even_sum +=check;
+            num = num/10;
+        }
+        else 
+        {
+            odd_sum += check ;
+            num = num/10 ;
+
+        }
+    }
+    printf("Sum of even terms is : %d\n",even_sum);
+    printf("Sum of odd terms is : %d",odd_sum);
+
+   
+    return 0;
+}
