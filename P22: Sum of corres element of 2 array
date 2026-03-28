@@ -1,0 +1,52 @@
+#include<stdio.h>
+
+int main()
+{
+    int size1,size2,i;
+    //array1
+    printf("Enter size of first array:");
+    scanf("%d",&size1);
+    int arr1[size1];
+    printf("Enter elements of array:\n");
+    for(i=0;i<size1;i++)
+    {
+        scanf("%d",&arr1[i]);
+       
+    }
+    //array2
+    printf("Enter size of second array:");
+    scanf("%d",&size2);
+    int arr2[size2];
+    printf("Enter elements of array:\n");
+    for(i=0;i<size2;i++)
+    {
+        scanf("%d",&arr2[i]);
+        
+
+    }
+    //sum of corresp. elements
+    
+    int sum[i];
+    if (size1 != size2)
+    {
+        printf("The arrays should be of the same size.");
+    }
+    else 
+    {
+        for (i=0;i<size2;i++)
+        {
+            sum[i] = arr1[i]+arr2[i];
+            
+            
+        }
+        printf("The sum array is:\n");
+        for(i=0;i<size2;i++)
+        {
+        
+            printf("%d ",sum[i]);
+        }
+
+    }
+    
+    return 0;
+}
