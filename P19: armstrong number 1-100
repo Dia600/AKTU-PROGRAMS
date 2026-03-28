@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include<math.h>
+int main()
+{
+   
+    
+    for(int t=1;t<=100;t++)
+    {
+        int original = t;
+        int n =t;
+        int sum = 0;
+        int i = 0;
+    // to count number of digits (i)
+        while (n>0)
+        {
+        
+            n = n/10;
+            i+=1;
+        }
+        n = original;
+    
+
+    //to clac the sum of digits raised to power i.
+        while (n>0)
+        {
+            int remain = n % 10;
+            int power = pow(remain,i);
+            sum += power ;
+            n = n/10;
+        }
+    
+    // print
+        if (sum==original)
+        {
+            printf("%d,",original);
+
+        }
+    
+    }
+}       
+    
+
+
+    
+   
